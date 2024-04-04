@@ -7,12 +7,13 @@ int main(){
 
     const int DIM = 8;
 
-    for(int i=8; i<=1; --i ){
-        for(int j=8; i<=1; --i){
-            if(i==j){
-                cout<<"X "<<endl;
+    for(int i=1; i<=DIM; ++i ){
+        for(int j=1; j<=DIM; ++j){
+            if((j==DIM-i+1) || (j==i)){
+                cout<<"X ";
             
-            }else{
+            }
+            else{
                 cout<<"O ";
             }
         }cout<<"\n";
